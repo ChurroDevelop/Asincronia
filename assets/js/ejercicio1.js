@@ -12,7 +12,7 @@ c. Describa el paso a paso del ejercicio (comente cada línea de código)
 
 // (async () => { // Creando una funcion asincrona autoejecutable, se caracteriza por tener () al final
 //     //Leer archivo JSON
-//     let response = await fetch(`../json/ejemplo.json`); // Haciendo un llamado a un archivo json loca, para poder extraer el nombre del usuarios
+//     let response = await fetch(`../json/ejemplo.json`); // Haciendo un llamado a un archivo json local, para poder extraer el nombre del usuarios
 //     let user = await response.json(); // se parsea a formato Json, la respuesta que de la peticion del archivo local Json
 //     // Consultar usuario de github
 //     let responseGithub = await fetch(`https://api.github.com/users/${user.name}/repos`); // Se hace una peticion a la api de github haciendole un template String, o una interpolacion para poder colocar el nombre del usuarios que se coloco en el formato json local
@@ -35,7 +35,7 @@ c. Describa el paso a paso del ejercicio (comente cada línea de código)
 
 //B) C)
 let filtro = x => x.name === "Evaluacion" // Filtro para encontrar un repositorio de dicho usuarios que se llame Evaluacion
-let promesa = () => { // Funcion fleca expresada, que retorna una promesa;
+let promesa = () => { // Funcion flecha expresada, que retorna una promesa;
     return new Promise((resolve, reject) => { // Retornando una nueva promesa a la funcion, donde tendra su resolve y su reject
         let peticionLocal = fetch(`../json/ejemplo.json`); // peticion al formato json local
             peticionLocal

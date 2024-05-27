@@ -18,7 +18,7 @@ let peticiones = async () => { // Declarando funcion asynconra
             let publicos = await repos.json(); // se toma la respuesta de la peticion de los repositorios de las personas y se le havce un parseo a formato json
             let guardados = publicos.map((el) => { // se recorre objeto por objeto de los repositorios de los usuarios
                 x.push(el) // se pushea el repositorio al array vacia
-                return el // // retorna todos los repositorios
+                return el // retorna todos los repositorios
             })
             console.log(guardados) // imprime los repositorios de los aprendices
         }
